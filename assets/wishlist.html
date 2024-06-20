@@ -3,86 +3,97 @@
 <head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bookloop</title>
-    <link    rel="icon"    href="../images/LOGO.ico"    type="image/x-icon"/>
+    <title>Bookloop - Wishlist</title>
+    <link rel="icon" href="./images/LOGO.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Bookloop- Read, Return, Repeat </h1>
-<a href="../index.html"><img src="../images/LOGO.png" alt="Bookloop logo"></a>
-<div class="search-form">
-    <form action="/search" method="GET">
-        <input type="text" id="search-query" name="search_query" placeholder="Search wishlist" required>
-        <button type="submit"><img src="../images/searchbtn.png" height="10"></button>
-    </form>
-</div>
+    <header>
+        <h1>Bookloop - Wishlist</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./assets/account.html">Account</a></li>
+                <li><a href="./assets/cart.html">Cart</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<ul>
-    <li><a href="./account.html">Account</a></li>
-    <li> <a href="./wishlist.html">Wishlist</a></li>
-    <li><a href="./cart.html">Cart</a></li>
-    <li><a href="#contact">Contact Info</a></li>
-</ul>
+    <main>
+        <section>
+            <h2>Wishlist</h2>
 
-<main>
-    <section>
-        <h2>Your wishlist</h2>
-
-        <div class="wishlist-item">
-            <img src="./images/book-cover-example.jpg" alt="Book Cover 1">
-            <div class="book-info">
-                <h2>Book Title 1</h2>
-                <p>by Author Name:</p>
-                <p>Price: $19.99</p>
-                <p>Status: In stock</p>
-                <p><a href="./book-details.html">View Details</a></p>
+            <div class="wishlist-item">
+                <img src="https://pictures.abebooks.com/SABRA2015/18269767749.jpg" alt="" height="200">
+                <div class="book-info">
+                    <h2> Alchemist</h2>
+                    <p> Author Name:Paulo Coelho</p>
+                    <p>Price: $500.99</p>
+                    <p>Status: In stock</p>
+                    <p><a href="./book-details.html">View Details</a></p>
+                </div>
+                <div class="wishlist-actions">
+                    <button onclick="moveToCart()">Move to Cart</button>
+                    <button onclick="removeFromWishlist()">Remove</button>
+                </div>
             </div>
-            <div class="wishlist-actions">
-                <button onclick="moveToCart()">Move to Cart</button>
-                <button onclick="removeFromWishlist()">Remove</button>
-            </div>
-        </div>
 
-        <div class="wishlist-item">
-            <img src="./images/book-cover-example2.jpg" alt="Book Cover 2">
-            <div class="book-info">
-                <h2>Book Title 2</h2>
-                <p>by Author Name:</p>
-                <p>Price: $14.99</p>
-                <p>Status: Out of stock</p>
-                <p><a href="./book-details.html">View Details</a></p>
+            <div class="wishlist-item">
+                <img src="https://faheemabdmominhussain.files.wordpress.com/2013/06/life-of-pi-tie-in.jpg" alt="" height=200>
+                <div class="book-info">
+                    <h2>Life of Pie</h2>
+                    <p>Author Name:Yann Martel</p>
+                    <p>Price: $450.99</p>
+                    <p>Status: Out of stock</p>
+                    <p><a href="./book-details.html">View Details</a></p>
+                </div>
+                <div class="wishlist-actions">
+                    <button onclick="moveToCart()">Move to Cart</button>
+                    <button onclick="removeFromWishlist()">Remove</button>
+                </div>
             </div>
-            <div class="wishlist-actions">
-                <button onclick="moveToCart()">Move to Cart</button>
-                <button onclick="removeFromWishlist()">Remove</button>
-            </div>
-        </div>
 
-        <div class="wishlist-item">
-            <img src="./images/book-cover-example3.jpg" alt="Book Cover 3">
-            <div class="book-info">
-                <h2>Book Title 3</h2>
-                <p>by Author Name:</p>
-                <p>Price: $24.99</p>
-                <p>Status: In stock</p>
-                <p><a href="./book-details.html">View Details</a></p>
+            <div class="wishlist-item">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1255292027i/6969361.jpg" alt="" height=200>
+                <div class="book-info">
+                    <h2>2 States</h2>
+                    <p>Author Name:Chetan Bhagat</p>
+                    <p>Price: $300.99</p>
+                    <p>Status: In stock</p>
+                    <p><a href="./book-details.html">View Details</a></p>
+                </div>
+                <div class="wishlist-actions">
+                    <button onclick="moveToCart()">Move to Cart</button>
+                    <button onclick="removeFromWishlist()">Remove</button>
+                </div>
             </div>
-            <div class="wishlist-actions">
-                <button onclick="moveToCart()">Move to Cart</button>
-                <button onclick="removeFromWishlist()">Remove</button>
-            </div>
-        </div>
-    </section>
-</main>
 
+        </section>
+    </main>
 
-<h3 id="contact">Contact Info</h3>
-<ul>
-    <li><a href="">Linkedin</a></li>
-    <li><a href="">Instagram</a></li>
-    <li><a href="">Customer Care</a></li>
-    <li><a href="">Email</a></li>
-</ul>
+    <footer>
+        <section id="contact">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Customer Care</a></li>
+                <li><a href="">Email</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script>
+    function moveToCart() {
+        // JavaScript code to move the book to the shopping cart
+        alert("Book moved to cart!");
+    }
+
+    function removeFromWishlist() {
+        // JavaScript code to remove the book from the wishlist
+        alert("Book removed from wishlist!");
+    }
+    </script>
 </body>
 </html>
-
