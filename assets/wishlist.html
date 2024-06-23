@@ -8,22 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookloop</title>
+    <link    rel="icon"    href="../images/LOGO.ico"    type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Bookloop- Read, Return, Repeat </h1>
+<a href="../index.html"><img src="../images/LOGO.png" alt="Bookloop logo"></a>
+<div class="search-form">
+    <form action="/search" method="GET">
+        <input type="text" id="search-query" name="search_query" placeholder="Search wishlist" required>
+        <button type="submit"><img src="../images/searchbtn.png" height="10"></button>
+    </form>
+</div>
+<ul>
+    <li><a href="./account.html">Account</a></li>
+    <li> <a href="./wishlist.html">Wishlist</a></li>
+    <li><a href="./cart.html">Cart</a></li>
+    <li><a href="#contact">Contact Info</a></li>
+</ul>
     <header>
-        <h1>Bookloop - Wishlist</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./assets/account.html">Account</a></li>
-                <li><a href="./assets/cart.html">Cart</a></li>
-                <li><a href="#contact">Contact Info</a></li>
-            </ul>
-        </nav>
+        <h2>Bookloop - Wishlist</h2>
     </header>
 
     <main>
         <section>
-            <h2>Wishlist</h2>
-
             <div class="wishlist-item">
                 <img src="https://pictures.abebooks.com/SABRA2015/18269767749.jpg" alt="" height="200">
                 <div class="book-info">
